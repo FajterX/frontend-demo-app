@@ -6,7 +6,7 @@ function getProductList(){
             "name": "Krzesło",
             "price": {
               "amount": "45.99",
-              "currency": "PLN"
+              "currency": "$"
             },
             "description": {
               "text": "Bardzo wygodne krzesło"

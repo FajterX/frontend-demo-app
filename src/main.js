@@ -9,7 +9,6 @@ const products = response.products
     })
 
 function parsePrice(price) {
-	var amount = price.amount.replace(".", ",")
-	if(price.currency === 'PLN') return amount + ' PLN'
-	else return price.currency + ' ' + amount
+	if(price.currency === 'PLN') return price.amount.replace(".", ",") + ' PLN'
+	else return price.currency + ' ' + price.amount
 }
