@@ -3,7 +3,7 @@ const response = getProductList();
 const listingElement = document.querySelector('#listing');
 
 const products = response.products
-    .map( product => renderProduct(product))
+    .map(renderProduct)
     .forEach( productHTML => {
         listingElement.innerHTML += productHTML
     })
